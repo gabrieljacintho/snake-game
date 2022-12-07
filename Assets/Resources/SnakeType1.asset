@@ -1,0 +1,16 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0923ac8892ee4a54c81a65a13ed4ace3, type: 3}
+  m_Name: SnakeType1
+  m_EditorClassIdentifier: 
+  imagePrefab: {fileID: 5231504884160887817, guid: b81a10e5274f8a04aa5b03df4f4e714a, type: 3}
+  playerPrefab: {fileID: 4185086518483400451, guid: bfd92c6534ce8bf43b338632c71564fe, type: 3}

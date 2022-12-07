@@ -1,0 +1,113 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1 &8716323765526501490
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 8716323765526501488}
+  - component: {fileID: 8716323765526501376}
+  - component: {fileID: 8716323765526501377}
+  - component: {fileID: 5408740403042925291}
+  - component: {fileID: -6511179022979825926}
+  m_Layer: 0
+  m_Name: Snake_Enemy
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &8716323765526501488
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8716323765526501490}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &8716323765526501376
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8716323765526501490}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 56f2212a293c7a44abbcd6b4004a3840, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  moveSpeed: 3
+  canUpdateScore: 0
+  initialBlocksPrefabs:
+  - {fileID: 6004968626461120582, guid: c874d84f9ea898644899b439c62f4e3b, type: 3}
+  - {fileID: 6004968626461120582, guid: c874d84f9ea898644899b439c62f4e3b, type: 3}
+  - {fileID: 6004968626461120582, guid: c874d84f9ea898644899b439c62f4e3b, type: 3}
+  pickBlockAudio:
+    samples:
+    - {fileID: 8300000, guid: dff34dbb6e134844c8180571b34da35e, type: 3}
+    - {fileID: 8300000, guid: 22f72d5918c53e047b8792e099024a10, type: 3}
+    - {fileID: 8300000, guid: 196ff452beef9a84e8e9b15b7d287701, type: 3}
+    volumeScale: 1
+  hitAudio:
+    samples:
+    - {fileID: 8300000, guid: 8da6021aeb3f5194da270c439bb34982, type: 3}
+    volumeScale: 1
+  deathAudio:
+    samples:
+    - {fileID: 8300000, guid: dff34dbb6e134844c8180571b34da35e, type: 3}
+    - {fileID: 8300000, guid: 196ff452beef9a84e8e9b15b7d287701, type: 3}
+    - {fileID: 8300000, guid: 22f72d5918c53e047b8792e099024a10, type: 3}
+    volumeScale: 1
+--- !u!114 &8716323765526501377
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8716323765526501490}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a4f75d9c8731b7e4498c41007666677f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  destination: {x: 0, y: 0}
+--- !u!114 &5408740403042925291
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8716323765526501490}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0802e6a1ff1c63144bb23f452d0efac9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  isRewinding: 0
+--- !u!114 &-6511179022979825926
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8716323765526501490}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: cd3668ecae22af2458ff6d1c4eddc5af, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  gameMatch: {fileID: 0}
+  snakeController: {fileID: 0}
+  snakeAI: {fileID: 0}
+  block: {fileID: 0}
